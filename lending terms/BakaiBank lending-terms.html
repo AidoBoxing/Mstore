@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PDF Viewer</title>
+	<link rel="stylesheet" href="BakaiBank lending-terms.css">
+</head>
+<body>
+	<div class="container">
+		<h1>View PDF with jQuery</h1>
+		<div id="viewpdf"></div>
+	</div>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="pdfobject.js"></script>
+	<script>
+		var viewer = $('#viewpdf');
+		PDFObject.embed('BakaiBank rules.pdf', viewer);
+	</script>
+</body>
+</html>
